@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PayPal Payment Integration</title>
+</head>
+<body>
+  <h1>Transfer Amount</h1>
+  <fieldset>
+    <legend> Order details </legend>
+  <p> <label> Amount </label> 
+        <input type = "checkbox"
+    name = "Amount" value = "100"> 100 </p>
+<p>
+  <label> Currency </label>
+  <select id = "Currency-type">
+      <option value="1">USD</option>
+      <option value="2">EUR</option>
+      <option value="3">THB</option>
+      <option value="4">SGD</option>
+      <option value="5">AUD</option>
+  </select></p>  <p>
+    <label>Customer Full-name </label>
+    <input type="text" id="myText" value="Enter your full name">
+  </p>
+</fieldset>
+  <fieldset>
+    <legend> Payment details </legend>
+    <label> Credit card holder name </label>
+    <input type="text" id="myText" value="Enter your full name">
+<p>
+  <label> Credit card number </label>
+  <input type="text" id="myText" value="Enter your Credit card number">
+</p>  
+<p>
+  <label> Credit card expiration </label>
+  <input type="text" id="myText" value="Expiration month/year(MM/YY)">
+</p>
+<p>
+  <label> Credit card CVV </label>
+  <input type="text" id="myText" value="Enter your CVV">
+</p>
+  </fieldset>
+  <form action="/pay" method="post">
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
